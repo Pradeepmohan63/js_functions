@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js functions</title>
+</head>
+
+<body>
+	<div class="functions">
+		<div>
+		<input type="number" id="number1" class="number1">
+		</div><br>
+		
+		<div>
+		<input type="number" id="number2" class="number2">
+		</div><br>
+		
+		<!-- <select> -->
+			<!-- <option value="add" onclick="add()">add</option> -->
+			<!-- <option value="subtract" onclick="subtract()">subtract</option> -->
+			<!-- <option value="multiply" onclick="multiply()">multiply</option> -->
+			<!-- <option value="divide" onclick="divide()">divide</option> -->
+		<!-- </select> -->
+		
+		<button type="submit" onclick="add()">add</button>
+		<button type="submit" onclick="subtract()">subtract</button>
+		<button type="submit" onclick="multiply()">multiply</button>
+		<button type="submit" onclick="divide()">divide</button>
+	</div>
+<script>
+		function add(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a+b;
+			console.log(a+"+"+b+"="+c);
+		}
+		
+		function subtract(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a-b;
+			console.log(a+"-"+b+"="+c);
+		}
+		
+		function multiply(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a*b;
+			console.log(a+"*"+b+"="+c);
+		}
+		
+		function divide(){
+			var a = parseInt(document.getElementById("number1").value);
+			var b = parseInt(document.getElementById("number2").value);
+			c=a/b;
+			console.log(a+"/"+b+"="+c);
+		}
+</script>
+</body>
+</html>
